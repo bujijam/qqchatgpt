@@ -1,5 +1,7 @@
 # qqchatgpt
-极简的qq群聊chatgpt机器人
+极简的qq群聊chatgpt机器人。
+
+@机器人与其进行互动：
 
 `@botname 世界上最高的山是哪座`
 
