@@ -35,4 +35,10 @@ https://github.com/Mrs4s/go-cqhttp/releases
 
 ## 运行
 
-运行`main.py`和`go-cqhttp.bat`
+填写好`main.py`中OpenAI账号相关信息后运行`main.py`和`go-cqhttp.bat`
+
+# 相关链接
+
+https://github.com/acheong08/ChatGPT
+
+https://docs.go-cqhttp.org/
