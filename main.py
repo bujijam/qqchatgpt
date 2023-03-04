@@ -25,7 +25,7 @@ class RecvMsg(Resource):
                 if content == '重置对话':
                     try:
                         chatbot.reset_chat()
-                        hm.__init__()
+                        hm.initialize(gid)
                         send(gid, 'group', '已重置')
                     except:
                         send(gid, 'group', '重置失败')
