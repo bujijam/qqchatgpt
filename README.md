@@ -41,19 +41,14 @@ https://github.com/Mrs4s/go-cqhttp/releases
 
 ## 运行
 
-填写好`main.py`中OpenAI账号相关信息后运行`main.py`和`go-cqhttp.bat`
-
-tips:
-
-- 获取access token: https://chat.openai.com/api/auth/session
-- 获取session token: 按`F12`打开控制台，选择`应用程序`选项卡，选择`Cookie`，复制`__Secure-next-auth.session-token`的值
-- 除了可以填写access token和session token进行登录以外，还可以填写邮箱和密码登录（但不支持谷歌和微软账户）。
-- 要么选择使用access token和session token登录，要么使用邮箱和密码登录，不能四个全填上。
+填写好`handlemsg.py`中的api key后运行`main.py`和`go-cqhttp.bat`。
 
 # 相关链接
 
 https://github.com/acheong08/ChatGPT
 
 https://docs.go-cqhttp.org/
+
+https://platform.openai.com/docs/api-reference/chat/create?lang=python
 
 如何注册OpenAI账号: https://sms-activate.org/cn/info/ChatGPT
