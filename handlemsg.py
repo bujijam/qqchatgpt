@@ -32,11 +32,14 @@ class HandleMsg:
         """获取回答并发送群聊消息"""
         self.message = ''
         try:
-            for data in chatbot.ask(msg, convo_id = all_convo[gid]):
-                self.message += data
-        except KeyError:
-            self.initialize(gid)
-            for data in chatbot.ask(msg, convo_id = all_convo[gid]):
-                self.message += data
+            try:
+                for data in chatbot.ask(msg, convo_id = all_convo[gid]):
+                    self.message += data
+            except KeyError:
+                self.initialize(gid)
+                for data in chatbot.ask(msg, convo_id = all_convo[gid]):
+                    self.message += data
+        except requests.exceptions.ProxyError:
+            send(gid, 'group', '请检查代理配置')
         print()
         send(gid, 'group', nick+self.message)
